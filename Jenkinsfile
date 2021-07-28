@@ -16,7 +16,7 @@ pipeline {
        stage('Deploying'){
                    steps{
                        echo 'Se ha archivado el artefacto, desplegando ..'
-                       sh 'java -jar build/libs/helo-spring-0.0.1-SNAPSHOT.jar'
+                       sh 'docker-compose up -d'
                    }
                }
 

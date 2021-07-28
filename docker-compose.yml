@@ -1,0 +1,7 @@
+version: "3.0"
+services:
+  helo-spring:
+    image: helo-spring:latest
+    build: .
+    ports:
+      - "8083:8080"
